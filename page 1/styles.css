@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Jersey+10&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+body {
+    font-family: "Roboto", sans-serif;
+    background: rgb(72, 179, 229);
+}
+
+header {
+    display: flex;
+ text-align: center;
+ flex-direction: column;
+ background: #333333;
+ border-radius: 20px;
+padding:30px;
+
+}
+
+.titre {
+    margin: 10px auto;
+    font-family: "Jersey 10", sans-serif;
+    color: rgb(72, 179, 229);
+
+    font-size: 2rem;
+    text-shadow: 
+                2px 2px 0px black, 
+               -2px 2px 0px black, 
+                2px -2px 0px black, 
+               -2px -2px 0px black,
+                2px 0px 0px black,
+               -2px 0px 0px black,
+                0px 2px 0px black,
+                0px -2px 0px black;
+        }
+    
+
+
+#input {
+margin-right: 30px;
+width: 280px;
+height: 30px;
+border-radius: 10px;
+cursor: pointer;
+}
+
+#input:placeholder {
+    text-align: center;
+    align-items: center;
+}
+
+
+#bouton {
+    height: 35.2px;
+    border-radius: 10px;
+    width: 80px;
+    cursor: pointer;
+    background: rgb(72, 179, 229);
+    color: whitesmoke;
+    transition: 0.3s;
+}
+
+#bouton:hover {
+    background:rgb(10, 82, 116);;
+}
+
+main {
+   border-radius: 20px;
+   margin: 10px;
+   background: #333333;
+   
+}
+
+#carte {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+article {
+    display: flex;
+    border-radius: 15px;
+    padding: 10px;
+    width: 200px;
+    height: 350px;
+    margin: 20px;
+    color: #333333;
+    background: rgb(72, 179, 229);
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+article:hover {
+    transform: scale(1.1);
+}
+
+#cartouche {
+    color: whitesmoke;
+    background: #333333;
+}
+
+
+article img {
+    width: 200px;
+    height: 200px;
+
+}
