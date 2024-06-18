@@ -22,7 +22,7 @@ const button = document.getElementById("bouton");
 
 
            
-    
+
 
             fetch(URL3)
                 .then(response => response.json())
@@ -30,6 +30,9 @@ const button = document.getElementById("bouton");
                     let myData = data.Search;
                     console.log(data);
 
+                    if (data.Response === "False") {
+                        alert("Aucun film n'a été trouver ")
+                                    }
                     document.getElementById("carte").innerHTML = "";
                    
                     for (let i = 0; i < myData.length; i++) {
@@ -48,6 +51,7 @@ const button = document.getElementById("bouton");
                         document.getElementById("carte").innerHTML += monHtml;
                   
         
+        
                    
                 //   })
                         
@@ -63,6 +67,7 @@ const button = document.getElementById("bouton");
             if (nomDuFilm.value === ""){
                 alert("Le champs est vite")
              }
+            
              else {
 
                 cinema2();
