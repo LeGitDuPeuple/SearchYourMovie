@@ -10,7 +10,7 @@ const button = document.getElementById("bouton");
 
        
 
-
+// la fonction assynchrone sert a rendre le fetch plus rapide car il ralentu quand il est dans une fonction
 
         const cinema2 = async () => {
             let URL3 = "http://www.omdbapi.com/?s=" + nomDuFilm.value + "&" + apiKey;
@@ -42,8 +42,7 @@ const button = document.getElementById("bouton");
                                     <h1> ${myData[i].Title}</h1>
                                     <p>Date de parution : ${myData[i].Year}</p>
                                     <img src="${myData[i].Poster}" alt="Affiche du film">
-                                    <a href="./index2.html?id=${myData[i].imdbID }">SELECTION</a>
-                                    <p>${myData[i].imdbID}</p>
+                                    <a href="./index2.html?id=${myData[i].imdbID }">Voir plus</a>
                                 </div>
                             </article>`;
     
